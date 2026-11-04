@@ -1,0 +1,16 @@
+=== PREEMPT_RT CYCLICTEST RESULT ===
+Environment: QEMU ARM Cortex-A9
+Kernel: Linux 5.15.0-rt17 PREEMPT_RT
+High Resolution Timers: Enabled
+
+Command:
+cyclictest -p 80 -t 1 -i 1000 -l 10000 -q
+
+Samples: 10000
+Interval: 1000 us
+
+Min: 76 us
+Avg: 307 us
+Max: 3355 us
+
+Source: Transcribed from QEMU terminal output.

@@ -1,0 +1,13 @@
+=== NORMAL KERNEL ===
+T: 0 (   62) P:80 I:1000 C:  10000 Min:     70 Act:  291 Avg:  305 Max:  116859
+T: 0 (   64) P:80 I:1000 C:  10000 Min:     91 Act:  246 Avg:  295 Max:    2091
+T: 0 (   66) P:80 I:1000 C:  10000 Min:     71 Act:  257 Avg:  260 Max:    2442
+
+=== PREEMPT_RT KERNEL ===
+T: 0 (   82) P:80 I:1000 C:  10000 Min:     61 Act:  327 Avg:  251 Max:    3579
+T: 0 (   84) P:80 I:1000 C:  10000 Min:     78 Act:  346 Avg:  300 Max:    2851
+T: 0 (   86) P:80 I:1000 C:  10000 Min:    129 Act:  306 Avg:  259 Max:    2715
+
+=== AVERAGE LATENCY ===
+Normal: 286.67 us
+PREEMPT_RT: 270.00 us

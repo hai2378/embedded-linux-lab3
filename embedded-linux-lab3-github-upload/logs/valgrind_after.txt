@@ -1,0 +1,17 @@
+==27999== Memcheck, a memory error detector
+==27999== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==27999== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==27999== Command: ./memory_leak_fixed
+==27999== 
+=== Memory Leak Test ===
+Data: Hello Embedded Linux Lab 3
+Program finished.
+==27999== 
+==27999== HEAP SUMMARY:
+==27999==     in use at exit: 0 bytes in 0 blocks
+==27999==   total heap usage: 2 allocs, 2 frees, 4,196 bytes allocated
+==27999== 
+==27999== All heap blocks were freed -- no leaks are possible
+==27999== 
+==27999== For lists of detected and suppressed errors, rerun with: -s
+==27999== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

@@ -1,0 +1,12 @@
+# started on Mon Oct 26 18:05:00 2026
+
+
+ Performance counter stats for './memory_leak_fixed' (5 runs):
+
+              0.66 msec task-clock                                                              ( +- 18.57% )
+                 0      context-switches                                                      
+                 0      cpu-migrations                                                        
+                57      page-faults                                                             ( +-  0.70% )
+
+       0.001760499 +- 0.000319873 seconds time elapsed  ( +- 18.17% )
+

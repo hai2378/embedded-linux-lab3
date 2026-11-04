@@ -1,0 +1,6 @@
+=== BEFORE FIX ===
+==27919==    definitely lost: 100 bytes in 1 blocks
+==27919== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+=== AFTER FIX ===
+==27999== All heap blocks were freed -- no leaks are possible
+==27999== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

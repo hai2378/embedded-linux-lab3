@@ -1,0 +1,27 @@
+==27919== Memcheck, a memory error detector
+==27919== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==27919== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==27919== Command: ./memory_leak
+==27919== 
+=== Memory Leak Test ===
+Data: Hello Embedded Linux Lab 3
+Program finished.
+==27919== 
+==27919== HEAP SUMMARY:
+==27919==     in use at exit: 100 bytes in 1 blocks
+==27919==   total heap usage: 2 allocs, 1 frees, 4,196 bytes allocated
+==27919== 
+==27919== 100 bytes in 1 blocks are definitely lost in loss record 1 of 1
+==27919==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==27919==    by 0x10919E: create_leak (memory_leak.c:7)
+==27919==    by 0x109233: main (memory_leak.c:25)
+==27919== 
+==27919== LEAK SUMMARY:
+==27919==    definitely lost: 100 bytes in 1 blocks
+==27919==    indirectly lost: 0 bytes in 0 blocks
+==27919==      possibly lost: 0 bytes in 0 blocks
+==27919==    still reachable: 0 bytes in 0 blocks
+==27919==         suppressed: 0 bytes in 0 blocks
+==27919== 
+==27919== For lists of detected and suppressed errors, rerun with: -s
+==27919== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

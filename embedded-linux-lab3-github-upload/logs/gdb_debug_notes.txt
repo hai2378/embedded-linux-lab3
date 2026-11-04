@@ -1,0 +1,32 @@
+=== GDB DEBUGGING NOTES - LAB 03 ===
+
+Environment:
+QEMU ARM / GDB Multiarch
+
+Bug 1: Array Out-of-Bounds
+Function: process_data()
+Problem: Loop uses i <= len.
+Observation: i = 5, len = 5.
+Fix: Change condition to i < len.
+
+Bug 2: Use After Free
+Function: create_message()
+Problem: Memory is freed before returning buf.
+Fix: Return valid allocated memory and free
+it only after the caller finishes using it.
+
+Bug 3: Integer Overflow
+Function: calculate()
+Inputs: a = 100000, b = 100000
+Incorrect result: 1410065408
+Correct result: 10000000000
+Fix: Use long long for multiplication and result.
+
+Fixed application tests:
+Array sum: 150
+Message: Hello Embedded Linux
+Calculation: 10000000000
+
+Note:
+These notes are based on earlier GDB terminal
+screenshots, not a raw GDB session transcript.
