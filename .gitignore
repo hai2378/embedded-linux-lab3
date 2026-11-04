@@ -1,0 +1,17 @@
+# Build trees, object files, and temporary files
+*.o
+*.a
+*.ko
+*.so
+*.pyc
+__pycache__/
+*.swp
+*.tmp
+*~
+# Kernel source trees should not be committed wholesale
+linux-5.15/
+*.tar.xz
+*.patch.xz
+# Ignore potentially large generated dumps
+*.core
+core
